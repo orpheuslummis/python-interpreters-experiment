@@ -1,0 +1,24 @@
+[project]
+name = "python313-interpreters-experiment"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Orpheus Lummis", email = "o@orpheuslummis.info" }
+]
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.13"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/python313_interpreters_experiment"]
